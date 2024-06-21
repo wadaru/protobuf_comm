@@ -17,16 +17,12 @@ BASEDIR = ../../..
 include $(BASEDIR)/etc/buildsys/config.mk
 include $(BUILDSYSDIR)/protobuf.mk
 include $(BUILDSYSDIR)/boost.mk
-include $(BUILDCONFDIR)/websocket/websocket.mk
 include $(BUILDSYSDIR)/clips.mk
 
 
 REQ_BOOST_LIBS = system asio 
 HAVE_BOOST_LIBS = $(call boost-have-libs,$(REQ_BOOST_LIBS))
 HAVE_BOOST_LIBS_OPT = $(call boost-have-libs,$(OPT_BOOST_LIBS))
-
-OBJS_WEBSOCKET = websocket.o
-HDRS_WEBSOCKET = websocket.h
 
 PRESUBDIRS = llsf_log_msgs
 CFLAGS += $(CFLAGS_CPP11)
