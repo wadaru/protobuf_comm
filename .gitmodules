@@ -1,3 +1,0 @@
-[submodule "rcll-refbox/src/msgs"]
-	path = rcll-refbox/src/msgs
-	url = https://github.com/robocup-logistics/rcll-protobuf-msgs
